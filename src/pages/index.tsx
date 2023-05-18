@@ -1,10 +1,14 @@
 import Image from "next/image";
+
 import bgcard2 from "../../public/bg-card2.png";
+import finn from "../../public/finn.svg";
+
 import bgcard from "../../public/bg-card.png";
+import bb8 from "../../public/BB-8.svg";
+
 import bgcharacter from "../../public/Character.png";
 import bg from "../../public/Image.png";
-import finn from "../../public/finn.svg";
-import bb8 from "../../public/BB-8.svg";
+
 import Atropos from "atropos/react";
 
 export default function Home() {
@@ -14,23 +18,25 @@ export default function Home() {
       highlight={false}
       className=" flex justify-center items-center  w-full h-full">
       <div className=" h-[600px] flex  items-center ">
-        <div
-          className="w-80 h-[486px]  bg-purple-gradient-bg relative rounded-2xl bg-gradient-to-r from-purple-gradient-card to-pink-gradient-card shadow-3xl 
-        overflow-hidden flex items-center justify-center">
+
+        <div className="w-80 h-[486px]  bg-purple-gradient-bg relative rounded-2xl bg-gradient-to-r from-purple-gradient-card to-pink-gradient-card 
+        shadow-3xl overflow-hidden flex items-center justify-center">
           <Image src={bgcard} alt="" className="absolute opacity-30" />
           <Image src={finn} alt="" />
         </div>
 
         <div
-          className="w-[436px] px-10 pt-12 z-10 
-        h-[608px] bg-purple-gradient-bg relative rounded-2xl bg-gradient-to-r from-purple-gradient-card to-pink-gradient-card shadow-4xl overflow-hidden">
+          className="w-[436px] px-10 pt-12 z-10 h-[608px] bg-purple-gradient-bg relative rounded-2xl bg-gradient-to-r from-purple-gradient-card 
+          to-pink-gradient-card shadow-4xl overflow-hidden">
           <div className="z-50">
             <div className="w-60">
-              <h1
-                data-atropos-offset="5"
-                className="uppercase text-3xl text-white drop-shadow-sm backdrop-blur-md">Rey SkyWalker</h1>
-              <p data-atropos-offset="1" className="text-[12px] mt-4">Era uma catadora de sucata que descobriu ser sensível à Força
-              durante sua busca ao lendário Mestre Jedi Luke Skywalker.</p>
+              <h1 data-atropos-offset="5" className="uppercase text-3xl text-white drop-shadow-sm backdrop-blur-md">
+                Rey SkyWalker
+              </h1>
+              <p data-atropos-offset="1" className="text-[12px] mt-4">
+              Era uma catadora de sucata que descobriu ser sensível à Força
+              durante sua busca ao lendário Mestre Jedi Luke Skywalker.
+              </p>
             </div>
             <div className="mt-14 w-[200px] flex flex-col gap-4">
               <Image
@@ -66,7 +72,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-80 h-[486px] bg-purple-gradient-bg  relative rounded-2xl bg-gradient-to-r from-purple-gradient-card to-pink-gradient-card shadow-3xl overflow-hidden flex items-center justify-center">
+        <div className="w-80 h-[486px] bg-purple-gradient-bg  relative rounded-2xl bg-gradient-to-r from-purple-gradient-card to-pink-gradient-card 
+        shadow-3xl overflow-hidden flex items-center justify-center">
           <Image src={bgcard2} alt="" className="absolute opacity-30" />
           <Image src={bb8} alt="" />
         </div>
